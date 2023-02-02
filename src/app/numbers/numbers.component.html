@@ -1,0 +1,25 @@
+<hr>
+<hr>
+<div class="container">
+    <table class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Country</th>
+        <th>Country Code</th>
+        <th>State</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let PhoneNumber of phoneNumber">
+        <td><span>{{PhoneNumber.name}}</span></td>
+        <td><span>{{PhoneNumber.phone}}</span></td>
+        <td><span>{{PhoneNumber.country}}</span></td>
+        <td><span>{{PhoneNumber.countryCode}}</span></td>
+        <td><span>{{PhoneNumber.state}}</span></td>
+      </tr>
+      </tbody>
+    </table>
+   
+  </div>
